@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aikanord – Luxury from North</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0b4f54;
+      color: #f3e7b3;
+    }
+
+    h1, h2, h3 {
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #d6c27a;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .collection h2,
+    .craftsmanship h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+
+    .product {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 260px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      color: #e5cf84;
+    }
+
+    .craft-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .craft-grid img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #083b3f;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 60px 6%;
+      }
+
+      .craft-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="logo.png" alt="Aikanord logo" class="logo" />
+      <h1>Aikanord</h1>
+      <p class="tagline">Luxury from North</p>
+    </div>
+  </header>
+
+  <!-- ESITTELY -->
+  <section class="intro">
+    <h2>Suomalainen luksusrannekello</h2>
+    <p>
+      Aikanord Oy tekee luksuskelloja suomalaisella sisulla. Jokainen malli on
+      suunniteltu Pohjolan luonnon kontrasteista – ajattomaksi, tarkaksi ja
+      arvokkaaksi.
+    </p>
+  </section>
+
+  <!-- TARINA -->
+  <section class="story">
+    <h2>Aikanordin tarina</h2>
+    <p>
+      Aikanordin tarina alkaa Pohjois-Suomen hiljaisista talviöistä, joissa aika
+      tuntuu pysähtyvän ja luonto tekee jokaisesta sekunnista arvokkaan. Yrityksen
+      perustaja, Ismo Petäjävesi, kasvoi ympäristössä, jossa tarkkuus ei ollut vain
+      taito – se oli elämäntapa.
+    </p>
+    <p>
+      Lopulta syntyi Aikanord — luksusbrändi, jonka jokainen malli on
+      kunnianosoitus Pohjolan voimakkaille kontrasteille: jäiselle valolle,
+      hiljaisille metsille ja karulle kauneudelle.
+    </p>
+    <p>
+      Kellot suunnitellaan Suomessa ja valmistetaan pienissä erissä mestareiden
+      käsissä. Aikanord ei seuraa vain aikaa. Se muotoilee siitä mestariteoksen.
+    </p>
+  </section>
+
+  <!-- MALLISTO -->
+  <section class="collection">
+    <h2>Mallisto</h2>
+    <div class="products">
+      <div class="product">
+        <img src="ice.png" alt="The Ice" />
+        <h3>The Ice</h3>
+        <p class="price">12 000 €</p>
+      </div>
+      <div class="product">
+        <img src="northern-lights.png" alt="Northern Lights" />
+        <h3>Northern Lights</h3>
+        <p class="price">8 000 €</p>
+      </div>
+      <div class="product">
+        <img src="obsidian-gold.png" alt="Obsidian-Gold" />
+        <h3>Obsidian-Gold</h3>
+        <p class="price">11 000 €</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KÄSITYÖ -->
+  <section class="craftsmanship">
+    <h2>Huippuosaamista ja harkittua käsityötä</h2>
+    <div class="craft-grid">
+      <img src="founder.jpg" alt="Aikanordin perustaja" />
+      <img src="watchmaker.jpg" alt="Kellosepän työ" />
+    </div>
+    <p>
+      Jokainen Aikanordin kello syntyy harkinnan, kokemuksen ja suomalaisen
+      täsmällisyyden tuloksena. Jokainen yksityiskohta on viimeistelty kestämään
+      aikaa.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Aikanord Oy</p>
+    <p>@aikanord | Instagram • X • YouTube</p>
+  </footer>
+
+</body>
+</html>
